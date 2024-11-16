@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 #navBar{
@@ -9,13 +10,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: rgb(234, 236, 238);
 
 }
 
 .deltaLogo{
 
-    height: 120px;
+    height: 100px;
     width: 150px;
     margin-left: 70px;
 }
@@ -28,10 +30,19 @@ flex-wrap: wrap;
     text-decoration: none;
     margin-right: 50px;
     font-size: 20px;
+    
    
 }
 
-a{
+.navEND a{
     text-decoration: none;
     color: black;
+    padding: 5px 50px;
+   
+    transition: .3s;
 }
+
+.navEND a:hover{
+    color: rgb(255, 255, 255);
+}
+.navEND a:
