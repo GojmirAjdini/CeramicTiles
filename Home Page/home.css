@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+.bg{
+
+    width: 100%;
+}
+
+.divImageDesc{
+
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+}
+
 #navBar{
     display: flex;
     flex-direction: row;
