@@ -22,9 +22,14 @@
     top: 25%;
     right: 65%;
     padding: 10px;
-   
+   transition: 0.5s ease;
 }
 
+.divTeksti:hover{
+
+    font-size: 45px;
+    transition: 0.5s ease;
+}
 p{
     font-weight: 100;
     font-size: 30px;
@@ -37,7 +42,7 @@ p{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(234, 236, 238);
+    background-color: rgba(112, 112, 112, 0.509);
     width: 100%;
 
 }
@@ -55,7 +60,8 @@ p{
     justify-content: space-between;
     list-style-type: none;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 70px;
+    margin-top: 20px;
     font-size: 20px;
     gap: 50px;
 }
@@ -64,11 +70,28 @@ p{
     text-decoration: none;
     color: black;
     padding: 5px 20px;
-    transition: 0.3s ease;
-}
+    transition: 0.5s ease;
 
+}.navEND a::after{
+
+    content: "";
+    display: flex;
+    position: relative;
+    left: 10px;
+    width: 0;
+    margin-top: 5px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s ease;
+
+}
 .navEND a:hover{
-   color: rgb(255, 255, 255);
-   font-size: 22px;
-   transition: 0.3s ease;
+
+    color: white;
+}
+.navEND a:hover::after{
+
+    width: 100%;
+    
+ 
 }
