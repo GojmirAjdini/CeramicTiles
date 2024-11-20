@@ -23,13 +23,37 @@
     right: 65%;
     padding: 10px;
    transition: 0.5s ease;
+ 
 }
 
 .divTeksti:hover{
 
-    font-size: 45px;
+    font-size: 40px;
     transition: 0.5s ease;
 }
+
+.butoniInspirohu{
+
+    padding: 26px 16px;
+    border-radius: 2px;
+    border: none;
+    font-size: large;
+    background-color: white;
+    text-transform: uppercase;
+    color: rgb(69, 69, 69);
+    font-weight: lighter;
+    transition: 0.3s ease-out;
+    margin-top: 10px;
+}
+
+.butoniInspirohu:hover{
+
+    padding: 27px 20px;
+    transition: 0.3s ease-in;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
 p{
     font-weight: 100;
     font-size: 30px;
@@ -42,7 +66,7 @@ p{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgba(112, 112, 112, 0.509);
+    background-color: rgb(231, 231, 231);
     width: 100%;
 
 }
@@ -70,7 +94,7 @@ p{
     text-decoration: none;
     color: black;
     padding: 5px 20px;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 
 }.navEND a::after{
 
