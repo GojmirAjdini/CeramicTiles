@@ -19,7 +19,7 @@
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 65%;
     padding: 10px;
    transition: 0.5s ease;
@@ -166,3 +166,30 @@ p{
     transition: 0.2s ease-in;
    
 }
+#harta {
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom:15px ;
+    transition: 0.3s ease-out;
+    background-color:rgb(0, 0, 0);
+    padding-bottom: 25px;
+   
+}
+#harta h2{
+    padding-bottom: 15px;
+    padding-top: 15px;
+ 
+    color: rgb(255, 255, 255);
+}
+#harta #maps{
+    transition: 0.3s ease-out;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#harta #maps:hover{
+
+    text-align: center;
+    opacity: 0.7;
+    transition: 0.3s ease-in;
+}
+
