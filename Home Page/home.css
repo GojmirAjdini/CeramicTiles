@@ -122,31 +122,47 @@ p{
 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 220px;
+    height: 270px;
+    width: 230px;
     background-color: rgb(108, 108, 108);
-    margin-right: 50px;
-    margin-top: 80px;
+    margin: 30px;
+    margin-top: 0px;
 }
 
 .Produktet{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    border: 2px;
-    box-shadow: 2px;
     flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    
 }
 #pllakaTitull{
-    margin-bottom: 250px;
-    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 200px;
+    border:solid black;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid black;
+    margin-right: 1220px;
+    padding-bottom: 2px;
+    border-style:groove;
 }
 .produkte>img{
 
-    box-shadow: 3px 5px rgb(165, 165, 165);
-    height: 250px;
+    box-shadow: 3px 3px rgb(165, 165, 165);
+    height: 270px;
     width: 230px;
+    transition: 0.2s ease-out;
+}
+
+.produkte>img:hover{
+
+    opacity: 0.5;
+    height: 270px;
+    width: 230px;
+    transition: 0.2s ease-in;
+   
 }
