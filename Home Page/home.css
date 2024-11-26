@@ -122,8 +122,8 @@ p{
 
     display: flex;
     flex-direction: row;
-    height: 270px;
-    width: 230px;
+    height: 300px;
+    width: 260px;
     background-color: rgb(108, 108, 108);
     margin: 30px;
     margin-top: 0px;
@@ -152,17 +152,17 @@ p{
 }
 .produkte>img{
 
-    box-shadow: 3px 3px rgb(165, 165, 165);
-    height: 270px;
-    width: 230px;
+    box-shadow: 0 0 5px rgb(165, 165, 165), 0 1px 2px rgb(165, 165, 165);
+    height: 300px;
+    width: 260px;
     transition: 0.2s ease-out;
 }
 
 .produkte>img:hover{
 
     opacity: 0.5;
-    height: 270px;
-    width: 230px;
+    height: 300px;
+    width: 260px;
     transition: 0.2s ease-in;
    
 }
