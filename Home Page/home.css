@@ -74,13 +74,14 @@ p{
     opacity: 0.7;
     transition: 0.5s;
     background:linear-gradient(rgb(218, 218, 218),rgb(198, 198, 198));
+    
 }
     #navBar:hover{
 
         opacity: 1;
         transition: 0.5s ease-in;
         top:0;
-       
+        
     }
 .deltaLogo{
 
@@ -147,9 +148,18 @@ p{
     flex-wrap: wrap;
     margin-top: 40px;
     justify-content: center;
-    
 }
+
+.Produktet p {
+    font-size: 15px;
+    padding-bottom: 15px;
+    text-align: start;
+    margin-left: 30px;
+    color: rgb(85, 85, 85);
+}
+
 #pllakaTitull{
+    font-size: 30px;
     margin-top: 30px;
     margin-left: 200px;
     border:solid black;
@@ -157,7 +167,7 @@ p{
     border-right: 0;
     border-left: 0;
     border-bottom: 1px solid black;
-    margin-right: 1220px;
+    margin-right: 1195px;
     padding-bottom: 2px;
     border-style:groove;
 }
@@ -195,10 +205,11 @@ p{
     transition: 0.3s ease-out;
     border: 2px solid white;
     border-radius: 5px;
+    opacity: 0.8;
 }
 #harta #maps:hover{
 
     text-align: center;
-    opacity: 0.7;
+    opacity: 1;
     transition: 0.3s ease-in;
 }
