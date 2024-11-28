@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+body{
+
+    background-color: #f9f9f9;
+}
 #navBar{
     display: flex;
     flex-direction: row;
@@ -13,11 +18,10 @@
     top: -5px;
     width: 100%;
     position:fixed;
-    z-index: 1;
+    z-index: 10;
     opacity: 0.7;
     transition: 0.3s ease-out;
     background:linear-gradient(rgb(218, 218, 218),rgb(198, 198, 198));
-    
 }
     #navBar:hover{
 
@@ -72,9 +76,18 @@
 
     width: 100%;
 }
-.listaEND #Ballina{
+.navEND #Ballina{
 
     color: white;
+}
+.navEND #Ballina::after{
+
+    width: 100%;
+}
+.navEND #Ballina:hover::after{
+
+    width: 0%;
+    color:black;
 }
 .divImage{
     display: flex;
@@ -90,12 +103,13 @@
     object-fit: cover;
     z-index: 0;
     position: absolute;
+    filter: brightness(75%);
 }
 
 .divTeksti {    
     color: white;
     font-size: 40px;
-    z-index: 1;
+    z-index: 9;
     padding: 10px;
     width: 800px;
    transition: 0.5s ease;
