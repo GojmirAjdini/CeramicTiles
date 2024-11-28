@@ -15,14 +15,14 @@
     position:fixed;
     z-index: 10;
     opacity: 0.7;
-    transition: 0.5s;
+    transition: 0.3s ease-out;
     background:linear-gradient(rgb(218, 218, 218),rgb(198, 198, 198));
     
 }
 #navBar:hover{
 
     opacity: 1;
-    transition: 0.5s ease-in;
+    transition: 0.3s ease-in;
     top:0;
         
     }
@@ -94,15 +94,15 @@
 }
 #bgimage #background-img {
     position: absolute;
-    height: 450px;
+    height: 70vh;
     width: 100%;
     object-fit:cover;
     filter: brightness(50%);   
 }
-
 #bgimage{
     display: flex;
     flex-direction: row;
+    margin-bottom: 150px;
 }
 #divTeksti {    
     color: white;
@@ -129,5 +129,53 @@
     font-weight:lighter;
     padding-top: 10px;
 }
+.nenTitull{
 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+}
+#Produktet-Nentitull{
 
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    border-bottom:1px solid black ;
+    margin-right: 20px;
+}
+
+#divProduktet{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    
+    
+}
+#divProduktet .foto{
+
+    margin: 30px;
+    height: 300px;
+    width: 260px;
+   
+   
+}
+
+#divProduktet p{
+    text-align: start;
+    padding-bottom: 20px;
+}
+#divProduktet img{
+
+ 
+    height: 300px;
+    width: 260px;
+}
