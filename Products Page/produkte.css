@@ -205,7 +205,6 @@
     justify-content: center;   
     padding: 15px;
     background-color: black;
-    z-index: 1;
    margin-top: 10px;
    border-top: 1px solid rgb(45, 45, 45);
 }
@@ -227,10 +226,27 @@
 }
 .socialIcons img{
 
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
+.socialIcons{
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width:100%;
+   margin-left: 130px;
+   overflow-x: hidden;
+} 
+.socialIcons #nrTel{
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
 #footerContainer .listaDIV li{
 
     display: flex;
