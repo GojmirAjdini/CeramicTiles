@@ -195,7 +195,7 @@
     justify-content: center;
     margin-top: 100px;
     height: 600px;
-    width: 600px;
+    width: 900px;
 }
 
 #formContainer input{
@@ -211,7 +211,6 @@
 
 #formContainer input:hover{
 
-    color: white;
     background-color: white;
     transition: 0.3s ease-in;
 }
@@ -258,3 +257,12 @@
    color: white;
    transition: 0.3s ease-in;
 }
+#formContainer label input{
+    width: 120px;
+}
+#formContainer label{
+
+    color: red;
+    width: 120px;
+    flex-wrap: wrap;
+}   
