@@ -281,6 +281,11 @@
 
     }
 
+    #formContainer #register{
+
+        padding-right: 10px;
+    }
+
     #formContainer #HeadingID{
 
         margin-top: 100px;
