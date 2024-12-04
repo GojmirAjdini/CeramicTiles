@@ -1,4 +1,6 @@
-function showSideBar(){
+function showSideBar(event){
+
+    event.preventDefault();
 
     const sidebar = document.querySelector('.sideBar')
 
@@ -6,7 +8,9 @@ function showSideBar(){
 
 }
 
-function closeSideBar(){
+function closeSideBar(event){
+
+    event.preventDefault();
 
     const sideBar = document.querySelector('.sideBar');
 
