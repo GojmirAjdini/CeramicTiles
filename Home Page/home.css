@@ -152,9 +152,25 @@ body{
     margin-left: 20px;
     align-items: center;
 }
-   .socialIcons{
-    margin-right:80px;
+
+#footerContainer .socialIcons{
+
+    justify-content: center;
+    width: fit-content;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+#footerContainer .listaDIV li{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        margin-top: 15px;
    }
+
 }
 .sideBar a{
     text-decoration: none;
@@ -398,13 +414,19 @@ body{
     align-self: center;
     align-items: center;
 }
-#footerContainer .listaDIV li{
+#footerContainer .listaDIV{
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     padding: 15px;
     font-size: 18px;
+}
+.listaDIV li{
+
+    list-style-type: none;
+    margin-top: 30px;
 }
 
 #footerContainer .listaDIV a{
