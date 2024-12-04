@@ -266,3 +266,25 @@
     width: 120px;
     flex-wrap: wrap;
 }   
+
+@media (max-width:400px){
+
+    #formContainer input{
+
+        padding:15px;
+        border: 0;
+        background-color: rgb(241, 241, 241);
+        transition: 0.3s ease-out;
+        border: 1px solid rgb(163, 163, 163);
+        height: 20px;
+        width: 300px;
+    }
+
+    .grupDIV{
+
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+    }
+
+}
