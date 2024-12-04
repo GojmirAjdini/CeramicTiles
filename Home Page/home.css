@@ -267,7 +267,7 @@ body{
     flex-direction: row;
     height: 300px;
     width: 260px;
-    background-color: rgb(123, 123, 123);
+    background-color: rgb(102, 148, 255);
     background-image:url(./search-icon.png);
     background-size:350px ;
     background-position-x: -50px;
