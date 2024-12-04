@@ -197,8 +197,22 @@
         font-size: 18px;
         margin-top: 15px;
 }
+#divTeksti .teksti1{
+
+    margin-top: -150px;
 }
 
+#bgimage #divTeksti .teksti1{
+
+    font-size: 32px;
+    padding-bottom: 0px;
+}
+#bgimage #divTeksti #paragraf{
+
+    margin-top: 10px;
+    font-size: 15px;
+}
+}
 #bgimage #background-img {
     position: absolute;
     height: 70vh;
@@ -208,8 +222,8 @@
 }
 #bgimage{
     display: flex;
-    flex-direction: row;
-    margin-bottom: 150px;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 #divTeksti {    
     color: white;
