@@ -237,9 +237,8 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    width:100%;
-   margin-left: 130px;
-   overflow-x: hidden;
+    width:fit-content;
+    margin-left: 130px;
 } 
 .socialIcons #nrTel{
 
