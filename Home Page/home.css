@@ -119,7 +119,8 @@ body{
     padding-left: 50px;
 }
 #hideIcon{
-    padding-right: 40px;
+    padding-right:10%;
+ 
 }
 .sideBar li{
     height: 12vh;
