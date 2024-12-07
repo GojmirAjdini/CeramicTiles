@@ -134,7 +134,7 @@
 }
 .sideBar li:not(#hideIcon):hover{
 
-    background-color: rgb(152, 152, 152);
+    background-color: rgb(90, 90, 90);
     width: 100%;
 }
 
@@ -261,7 +261,6 @@
 }
 #Produktet-Nentitull{
 
-    margin-top: 20px;
     font-size: 30px;
     color: black;
     text-align: center;
