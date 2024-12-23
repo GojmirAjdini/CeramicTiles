@@ -9,16 +9,24 @@
 <body>
 
     <div id="PageContainer">
+
+        <img src="../Products Page/robur.jpg" alt="">
     <div id="formaDIV">
         <form action="../Home Page/home.html" method="POST">
 
-            <label for="username">Username</label><br>
-            <input type="text" name="user"/><br><br>
+            <h3>Login</h3>
 
-            <label for="password">Password</label><br>
-            <input type="password" name="psw"/><br><br>
-
-            <input type="submit" name="submit" value="Login ">
+            <div id="userDIV" class="inputDIV">
+            <label for="username"></label><br>
+            <input placeholder="Username" type="text" name="user"/><br><br>
+            </div>
+            
+            <div id="pwDIV" class="inputDIV">
+            <label for="password"></label><br>
+            <input placeholder="Password" type="password" name="psw"/><br><br>
+            </div>
+            
+            <input type="submit" id="submit" name="submit" value="Login ">
         </form>
     </div> 
 </div>
