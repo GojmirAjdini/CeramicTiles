@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./register.css">
 </head>
 <body>
 
@@ -14,7 +14,12 @@
     <div id="formaDIV">
         <form action="../Home Page/home.html" method="POST">
 
-            <h3>Login</h3>
+            <h3>Register</h3>
+
+            <div id="emriDIV" class="inputDIV">
+            <label for="emri"></label><br>
+            <input placeholder="Emri" type="text" name="emri"/><br><br>
+            </div>
 
             <div id="emailDIV" class="inputDIV">
             <label for="email"></label><br>
@@ -25,9 +30,14 @@
             <label for="password"></label><br>
             <input placeholder="Password" type="password" name="psw"/><br><br>
             </div>
+
+            <div id="pwDIV" class="inputDIV">
+            <label for="password"></label><br>
+            <input placeholder="Confirm Password" type="password" name="psw"/><br><br>
+            </div>
             
-            <input type="submit" id="submit" name="submit" value="Login ">
-            <p>Don't have account? <span> <a href="../Register Page/register.html">Register</a>  </span></p>
+            <input type="submit" id="submit" name="submit" value="Register ">
+            <p>Already have an account? <span> <a href="../Login Page/login.html">Login</a>  </span></p>
         </form>
     </div> 
 </div>
