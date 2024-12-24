@@ -1,3 +1,23 @@
+<?php
+    function MetodaPOST(){
+
+        if(isset($_POST['submit'])){
+            $perdoruesi = $_POST['email'];
+            $password = $_POST['psw'];
+            echo 'Pershendetje per ju <br> Perdoruesi: ', $perdoruesi,
+            '<br> Fjalekalimi: ',$password;
+        exit();
+        }
+        else{
+            echo 'Ju nuk keni shtypur butonin Login';
+        }
+
+
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

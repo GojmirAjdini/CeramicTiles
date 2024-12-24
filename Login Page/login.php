@@ -2,7 +2,7 @@
     function MetodaPOST(){
 
         if(isset($_POST['submit'])){
-            $perdoruesi = $_POST['user'];
+            $perdoruesi = $_POST['email'];
             $password = $_POST['psw'];
             echo 'Pershendetje per ju <br> Perdoruesi: ', $perdoruesi,
             '<br> Fjalekalimi: ',$password;
