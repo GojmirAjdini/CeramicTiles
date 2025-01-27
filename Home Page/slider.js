@@ -1,10 +1,10 @@
 var i = 0;
 
 var imgArray = [
-    "Slider Imazhe/Ubtlogo.png",
-    "Slider Imazhe/UPlogo.png",
-    "Slider Imazhe/Ubtlogo.png",
-    "Slider Imazhe/UPlogo.png",
+    "Slider Imazhe/velzone.png",
+    "Slider Imazhe/keraben.png",
+    "Slider Imazhe/kai.jpg",
+    "Slider Imazhe/enmon.png",
 ];
 
 function changeImg(){
