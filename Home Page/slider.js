@@ -18,7 +18,7 @@ function changeImg(){
     else{
         i = 0;
     }
-    // setTimeout("changeImg()", 3000);
+     setTimeout("changeImg()", 3000);
 }
 window.onload = function(){
     document.getElementById('partneret').src = imgArray[0];
