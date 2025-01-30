@@ -474,6 +474,14 @@ body{
 
 @media (max-width:1024px){
 
+    #pageContainer #ImgBG img {
+
+        
+        height: 25vh;
+        width: 100%;
+        
+    }
+
     .imazhe, .imazhe2 {
         flex-direction: column;
         align-items: center;
@@ -531,6 +539,15 @@ body{
 }
 
 @media (max-width: 768px) {
+    
+    #pageContainer #ImgBG img {
+
+        
+        height: 25vh;
+        width: 100%;
+        
+    }
+    
     .imazhe, .imazhe2 {
         flex-direction: column;
         align-items: center;
@@ -594,6 +611,13 @@ body{
 
 @media (max-width: 480px) {
     
+    #pageContainer #ImgBG img {
+
+        
+        height: 25vh;
+        width: 100%;
+        
+    }
     .imazhe img{
 
         margin-top: 30px;
