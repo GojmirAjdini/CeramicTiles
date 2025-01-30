@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-  
+   
 }
 
 body{
@@ -196,7 +196,6 @@ body{
     align-items: center;
 }
 
-
 #footerContainer .socialIcons{
 
     justify-content: center;
@@ -204,6 +203,16 @@ body{
     margin-left: 30px;
     gap: 10px;
 }
+
+#footerContainer .listaDIV li{
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        margin-top: 15px;
+   }
 }
 
 #pageContainer #RrethNeshID h2{
@@ -372,7 +381,6 @@ body{
     
 }
 
-
 #footerContainer{
 
     display: flex;
@@ -380,10 +388,11 @@ body{
     flex-direction: column;
     justify-content: end;
     width: 100%;
-    height: 50vh;
+    min-height: min-content;
     background-color: rgb(15, 15, 15);
     color: rgb(209, 209, 209);
     margin-top: 50px;
+    padding-top: 20px;
 }
 #paragrafiFundit{
 
@@ -398,8 +407,8 @@ body{
     justify-content: center;   
     padding: 15px;
     background-color: black;
-   margin-top: 10px;
-   border-top: 1px solid rgb(45, 45, 45);
+    margin-top: 10px;
+    border-top: 1px solid rgb(45, 45, 45);
 }
 
 #footerContainer #paragrafiFundit{
@@ -415,7 +424,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    
 }
 .socialIcons img{
 
@@ -445,7 +454,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 0px;
+    
     font-size: 18px;
 }
 .listaDIV li{
@@ -465,14 +474,6 @@ body{
 
     color: white;
 
-}
-
-#partneretH2{
-
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 30px;
 }
 @media (max-width:1242px){
 
