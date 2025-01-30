@@ -232,16 +232,24 @@ body{
     z-index: 0;
 }
 
-#misioniID{
+#misioniID {
 
     display: flex;
     flex-direction: row;
-    height: 60vh;
+    min-height: auto;
     width: 100%;
     background-color: rgb(20, 20, 20);
     margin-top: 100px;
     color: white;
    transition: 0.3s ease-out;
+   flex-grow: 1;
+}
+
+#misioniID .tekstiID{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
 }
 
 #misioniID:hover{
@@ -261,7 +269,8 @@ body{
 
     margin-top: 20px;
     margin-left: 250px;
-    padding-right: 150px;
+    margin-right: 20px;
+    padding-right: 50px;
     line-height: 25px;
 
 }
@@ -271,6 +280,7 @@ body{
     flex-direction: row ;
     flex-wrap: nowrap;
     margin-top: 50px;
+    
 }
 
 .imazhe img{
@@ -302,7 +312,7 @@ body{
 .imazhe ul{
 
     margin-top: 30px;
-    padding-right: 150px;
+    padding-right: 30px;
     margin-left: 50px;
     line-height: 24px;
     margin-right: 10px;
@@ -318,7 +328,7 @@ body{
  
  .imazhe2 ul{
  
-     padding-left: 100px;
+     padding-left: 30px;
      padding-right: 20px;    
      line-height: 24px;
      margin: 30px;
@@ -450,4 +460,164 @@ body{
     margin-bottom: 40px;
     font-size: 30px;
 }
+@media (max-width:1242px){
 
+    .imazheTekst h2{
+
+        margin-top: 120px;
+    }
+
+    .imazheTekst2 h2{
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:1024px){
+
+    .imazhe, .imazhe2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .imazheTekst h2{
+
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .imazheTekst ul{
+        
+        margin-left: 50px;
+        padding: 0;
+        padding-right: 10px;
+    }
+    .imazheTekst2 h2{
+       margin: 0; 
+       text-align: center;
+        margin-top: 50px;
+       
+    }
+    .imazheTekst2 ul{
+        
+       margin-top: 30px;
+       padding: 0;
+    }
+    .imazhe img, .imazhe2 img {
+        width: 50%;
+        height: auto;
+        margin: 20px 0;
+    }
+    #misioniID {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        margin-top: -20px;
+    }
+    #misioniID .tekstiID h2, #misioniID .tekstiID p {
+        margin: 20px;
+        padding: 0;
+    }
+    #RrethNeshID {
+
+       margin-top: -50px;
+    }
+    #pageContainer #RrethNeshID p{
+
+        padding: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imazhe, .imazhe2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .imazhe img{
+
+        margin-top: 70px;
+        
+    }
+    .imazheTekst h2{
+
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .imazheTekst ul{
+        
+        margin-left: 50px;
+        padding: 0;
+        padding-right: 10px;
+    }
+    .imazheTekst2 h2{
+       margin: 0; 
+       text-align: center;
+        margin-top: 50px;
+       
+    }
+    .imazheTekst2 ul{
+        
+       margin-top: 30px;
+       padding: 0;
+    }
+    .imazhe img, .imazhe2 img {
+        width: 50%;
+        height: auto;
+        margin: 20px 0;
+    }
+  
+    #misioniID {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: auto;
+        margin-top: -20px;
+    }
+    #misioniID .tekstiID h2, #misioniID .tekstiID p {
+        margin: 20px;
+        padding: 0;
+    }
+    #RrethNeshID {
+
+       margin-top: -50px;
+    }
+    #pageContainer #RrethNeshID p{
+
+        padding: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .imazhe img{
+
+        margin-top: 30px;
+    }
+   
+    #pageContainer #RrethNeshID h2 {
+        font-size: 25px;
+        margin-top: 300px;
+        
+    }
+    #pageContainer #RrethNeshID p {
+        padding: 40px;
+        font-size: 15px;
+    }
+    .imazhe img, .imazhe2 img {
+        width: 90%;
+    }
+    #misioniID .tekstiID h2{
+
+        font-size: 20px;
+    }
+    #misioniID .tekstiID p{
+
+        font-size: 15px;
+
+    }
+}
