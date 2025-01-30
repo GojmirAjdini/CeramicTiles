@@ -18,6 +18,13 @@
     z-index: 99;
 }
 
+@media (max-width:550px){
+
+    #PageContainer #formaDIV{
+        padding: 40px;
+}
+}
+
 #PageContainer img{
 
     display: flex;
