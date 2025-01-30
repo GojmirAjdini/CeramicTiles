@@ -146,6 +146,7 @@
     width: fit-content;
  
 }
+
 @media(max-width:1090px){
 
     .hideMobile{
@@ -162,6 +163,25 @@
 
 }
 
+@media (max-width:786px){
+
+    #pageContainer #divTeksti h1{
+
+        margin: 0;
+        text-align: center;
+        font-size:35px ;
+
+    }
+
+    
+    #pageContainer #divTeksti p{
+    
+        margin: 0;
+        text-align: center;
+        font-size:15px ;
+        margin-top: 20px;
+    }
+}
 @media (max-width:400px){
 
    .sideBar{
@@ -178,6 +198,22 @@
     justify-content: flex-start;
     margin-left: 20px;
     align-items: center;
+}
+
+#pageContainer #divTeksti h1{
+
+    margin: 0;
+    text-align: center;
+    font-size:30px ;
+    margin-top: -30px;
+}
+
+#pageContainer #divTeksti p{
+
+    margin: 0;
+    text-align: center;
+    font-size:15px ;
+    margin-top: 20px;
 }
 
 #footerContainer .socialIcons{
@@ -197,24 +233,9 @@
         font-size: 18px;
         margin-top: 15px;
 }
-#divTeksti .teksti1{
-
-    margin-top: -150px;
-}
-
-#bgimage #divTeksti .teksti1{
-
-    font-size: 32px;
-    padding-bottom: 0px;
-}
-#bgimage #divTeksti #paragraf{
-
-    margin-top: 10px;
-    font-size: 15px;
-}
 }
 #bgimage #background-img {
-    position: absolute;
+  
     height: 70vh;
     width: 100%;
     object-fit:cover;
@@ -231,6 +252,7 @@
     text-align: start;
     width: 100% ;
     margin-top: 300px;
+    position: absolute;
 }
 #divTeksti .teksti1{
 
@@ -257,7 +279,6 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-top: 200px;
 }
 #Produktet-Nentitull{
 
@@ -307,7 +328,7 @@
     flex-direction: column;
     justify-content: end;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: rgb(15, 15, 15);
     color: rgb(209, 209, 209);
     margin-top: 50px;
