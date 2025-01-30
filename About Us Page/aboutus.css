@@ -197,7 +197,7 @@ body{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-top: 320px;
+    margin-top: 120px;
     font-size: 40px;
 
 }
@@ -224,12 +224,11 @@ body{
 
 #pageContainer #ImgBG img {
 
-    position: absolute;
     height: 35vh;
     width: 100%;
     object-fit:cover;
     filter: brightness(70%); 
-    z-index: 0;
+    
 }
 
 #misioniID {
@@ -242,7 +241,7 @@ body{
     margin-top: 100px;
     color: white;
    transition: 0.3s ease-out;
-   flex-grow: 1;
+   
 }
 
 #misioniID .tekstiID{
@@ -625,7 +624,7 @@ body{
    
     #pageContainer #RrethNeshID h2 {
         font-size: 25px;
-        margin-top: 300px;
+        margin-top: 120px;
         
     }
     #pageContainer #RrethNeshID p {
