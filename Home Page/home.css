@@ -161,7 +161,8 @@ body{
     width: fit-content;
  
 }
-@media(max-width:1000px){
+
+@media(max-width:1105px){
 
     .hideMobile{
 

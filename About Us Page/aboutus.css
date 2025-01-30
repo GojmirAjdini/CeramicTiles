@@ -146,6 +146,21 @@ body{
     width: fit-content;
  
 }
+@media(max-width:1090px){
+
+    .hideMobile{
+
+        display:none;
+    }
+
+    #menuIcon{
+
+        display: flex;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+}
 
 @media(max-width:900px){
 
@@ -197,7 +212,7 @@ body{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 100px;
     font-size: 40px;
 
 }
@@ -499,6 +514,7 @@ body{
         margin-left: 50px;
         padding: 0;
         padding-right: 10px;
+        text-align: start;
     }
     .imazheTekst2 h2{
        margin: 0; 
@@ -510,6 +526,7 @@ body{
         
        margin-top: 30px;
        padding: 0;
+       text-align: start;
     }
     .imazhe img, .imazhe2 img {
         width: 50%;
@@ -569,6 +586,7 @@ body{
         margin-left: 50px;
         padding: 0;
         padding-right: 10px;
+        text-align: start;
     }
     .imazheTekst2 h2{
        margin: 0; 
@@ -580,6 +598,7 @@ body{
         
        margin-top: 30px;
        padding: 0;
+       text-align: start;
     }
     .imazhe img, .imazhe2 img {
         width: 50%;
