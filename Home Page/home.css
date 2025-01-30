@@ -213,8 +213,24 @@ body{
         font-size: 18px;
         margin-top: 15px;
    }
-
 }
+
+@media(max-width:1250px){
+
+   #footerContainer .socialIcons .social{
+
+    margin-top: -40px;
+   }
+}
+
+@media(min-width:1921px){
+
+    #footerContainer {
+ 
+     height: 10vh;
+    }
+}
+    
 .divImage{
     display: flex;
     align-items: center; 
