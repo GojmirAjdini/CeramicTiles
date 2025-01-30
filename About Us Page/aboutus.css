@@ -181,10 +181,6 @@ body{
     align-items: center;
 }
 
-#pageContainer {
-
-    background-color: red;
-}
 
 #footerContainer .socialIcons{
 
@@ -201,19 +197,21 @@ body{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-top: 350px;
+    margin-top: 320px;
     font-size: 40px;
+
 }
 
 #pageContainer #RrethNeshID p{
 
     display: flex;
     flex-direction: row;
-    padding: 200px;
+    padding: 100px;
     padding-top: 70px;
     padding-bottom: 50px;
     margin-bottom: 50px;
     font-size: 20px;
+    line-height: 24px;
 
 }
 
@@ -227,7 +225,7 @@ body{
 #pageContainer #ImgBG img {
 
     position: absolute;
-    height: 40vh;
+    height: 35vh;
     width: 100%;
     object-fit:cover;
     filter: brightness(70%); 
@@ -238,7 +236,7 @@ body{
 
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-color: rgb(20, 20, 20);
     margin-top: 100px;
@@ -253,9 +251,10 @@ body{
 }
 #misioniID .tekstiID h2 {
 
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 250px;
-
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 #misioniID .tekstiID p {
@@ -263,10 +262,91 @@ body{
     margin-top: 20px;
     margin-left: 250px;
     padding-right: 150px;
+    line-height: 25px;
+
+}
+.imazhe{
+
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+
+.imazhe img{
+
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 150px;
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.35);
 
 }
 
+.imazhe h2{
 
+   margin-right: 50px; 
+   margin-top: 150px;
+   margin-left: 50px;
+   text-align: start;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+.imazheTekst{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imazhe ul{
+
+    margin-top: 30px;
+    padding-right: 150px;
+    margin-left: 50px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+ .imazhe2 h2{
+
+    margin-top: 150px;
+    margin-right: 50px;
+    text-align: end;
+    font-size: 25px;
+    text-transform: uppercase;
+ }
+ 
+ .imazhe2 ul{
+ 
+     padding-left: 100px;
+     padding-right: 20px;    
+     line-height: 24px;
+     margin: 30px;
+     
+ }
+ .imazhe2{
+
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+.imazheTekst2{
+ 
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+ }
+.imazhe2 img{
+    
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+    margin-right: 150px;
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.35);
+    background-color: red;
+    
+}
 
 
 #footerContainer{
@@ -341,7 +421,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 15px;
+    padding: 0px;
     font-size: 18px;
 }
 .listaDIV li{
@@ -362,3 +442,12 @@ body{
     color: white;
 
 }
+
+#partneretH2{
+
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
