@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['role'])) {
+    
+    header('Location: ../Login Page/login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,17 +25,18 @@
     
         <ul class="listaStart">
     
-        <li><a href="../Home Page/home.html"> <img class="deltaLogo" src="../Home Page/Delta-logo.png" alt=""></a></li>
+        <li><a href="../Home Page/home.php"> <img class="deltaLogo" src="../Home Page/Delta-logo.png" alt=""></a></li>
         
         </ul>
         <div class="navEND">
     
         <ul class="listaEND">
-        <li class="hideMobile"><a id="Ballina" href="../Home Page/home.html">Ballina</a></li>
-        <li class="hideMobile"><a href="../Products Page/produkte.html">Produkte</a></li>
-        <li class="hideMobile"><a href="../Ambients Page/ambient.html">Ambiente</a></li>
-        <li class="hideMobile"><a id="AboutUs" href ="../About Us Page/aboutus.html">Rreth nesh</a></li> 
-        <li class="hideMobile"><a href="../Kontakt Page/kontakt.html">Kontakti</a></li>
+        <li class="hideMobile"><a id="Ballina" href="../Home Page/home.php">Ballina</a></li>
+        <li class="hideMobile"><a href="../Products Page/produkte.php">Produkte</a></li>
+        <li class="hideMobile"><a href="../Ambients Page/ambient.php">Ambiente</a></li>
+        <li class="hideMobile"><a id="AboutUs" href ="../About Us Page/aboutus.php">Rreth nesh</a></li> 
+        <li class="hideMobile"><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
+        <li class="hideMobile"><a class="logout" href="../Logout Page/logout.php"><img id="logout" src="../Home Page/logout.png" alt=""></a></li>
         <li id="menuIcon" onclick= showSideBar(event)><a class="menuIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
     
@@ -34,11 +45,12 @@
         <ul class="sideBar">
     
             <li id="hideIcon" onclick=closeSideBar(event)><a class="hideIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a id="Ballina" href="../Home Page/home.html">Ballina</a></li>
-            <li><a href="../Products Page/produkte.html">Produkte</a></li>
-            <li><a href="../Ambients Page/ambient.html">Ambiente</a></li>
-            <li><a href="../About Us Page/aboutus.html">Rreth nesh</a></li> 
-            <li><a href="../Kontakt Page/kontakt.html">Kontakti</a></li>
+            <li><a id="Ballina" href="../Home Page/home.php">Ballina</a></li>
+            <li><a href="../Products Page/produkte.php">Produkte</a></li>
+            <li><a href="../Ambients Page/ambient.php">Ambiente</a></li>
+            <li><a href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
+            <li><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
+            <li><a href="../Logout Page/Logout.php"><img id="logoutMobile" src="../Home Page/logout-white.png" alt=""></a></li>
       
         </ul>
         <div id="ImgBG"> 
@@ -111,11 +123,11 @@
          
                 <ul class="listaDIV">
 
-                <li><a id="Ballina" style="text-decoration: none;" href="../Home Page/home.html">Ballina</a></li>
-                <li><a style="text-decoration: none;" href="../Products Page/produkte.html">Produkte</a></li>
-                <li><a style="text-decoration: none;" href="../Ambients Page/ambient.html">Ambiente</a></li>
-                <li><a style="text-decoration: none;" href="../About Us Page/aboutus.html">Rreth nesh</a></li> 
-                <li><a style="text-decoration: none;" href="../Kontakt Page/kontakt.html">Kontakti</a></li>
+                <li><a id="Ballina" style="text-decoration: none;" href="../Home Page/home.php">Ballina</a></li>
+                <li><a style="text-decoration: none;" href="../Products Page/produkte.php">Produkte</a></li>
+                <li><a style="text-decoration: none;" href="../Ambients Page/ambient.php">Ambiente</a></li>
+                <li><a style="text-decoration: none;" href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
+                <li><a style="text-decoration: none;" href="../Kontakt Page/kontakt.php">Kontakti</a></li>
       
             </ul>
       

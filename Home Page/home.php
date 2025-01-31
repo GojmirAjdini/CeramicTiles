@@ -73,12 +73,12 @@ if (isset($_SESSION['role'])) {
     <div class="navEND">
 
     <ul class="listaEND">
-    <li class="hideMobile"><a id="Ballina" href="../Home Page/home.html">Ballina</a></li>
-    <li class="hideMobile"><a href="../Products Page/produkte.html">Produkte</a></li>
-    <li class="hideMobile"><a id="ambiente" href="../Ambients Page/ambient.html">Ambiente</a></li>
-    <li class="hideMobile"><a href="../About Us Page/aboutus.html">Rreth nesh</a></li> 
-    <li class="hideMobile"><a href="../Kontakt Page/kontakt.html">Kontakti</a></li>
-    <li class="hideMobile"><a class="logout" href="../Login Page/login.html"><img id="logout" src="./logout.png" alt=""></a></li>
+    <li class="hideMobile"><a id="Ballina" href="../Home Page/home.php">Ballina</a></li>
+    <li class="hideMobile"><a href="../Products Page/produkte.php">Produkte</a></li>
+    <li class="hideMobile"><a id="ambiente" href="../Ambients Page/ambient.php">Ambiente</a></li>
+    <li class="hideMobile"><a href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
+    <li class="hideMobile"><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
+    <li class="hideMobile"><a class="logout" href="../Logout Page/logout.php"><img id="logout" src="./logout.png" alt=""></a></li>
     <li id="menuIcon" onclick= showSideBar(event)><a class="menuIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
 
@@ -88,11 +88,11 @@ if (isset($_SESSION['role'])) {
 
         <li id="hideIcon" onclick=closeSideBar(event)><a class="hideIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         <li><a id="Ballina" href="../Home Page/home.php">Ballina</a></li>
-        <li><a href="../Products Page/produkte.html">Produkte</a></li>
-        <li><a href="../Ambients Page/ambient.html">Ambiente</a></li>
-        <li><a href="../About Us Page/aboutus.html">Rreth nesh</a></li> 
-        <li><a href="../Kontakt Page/kontakt.html">Kontakti</a></li>
-        <li><a href="../Login Page/login.html"><img id="logoutMobile" src="./logout-white.png" alt=""></a></li>
+        <li><a href="../Products Page/produkte.php">Produkte</a></li>
+        <li><a href="../Ambients Page/ambient.php">Ambiente</a></li>
+        <li><a href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
+        <li><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
+        <li><a href="../Logout Pag/Logout.php"><img id="logoutMobile" src="./logout-white.png" alt=""></a></li>
 
     </ul>
     
@@ -101,15 +101,15 @@ if (isset($_SESSION['role'])) {
     <div class="divTeksti">
         <h1>Inari</h1>
         <p>Me estetikën e tyre të frymëzuar nga guri i mermerit, ato përfaqësojnë zgjidhjen ideale për ata që duan të ndërthurin elegancën dhe ngrohtësinë natyrore, dizajnin dhe harmoninë estetike.</p>
-        <a href="../Products Page/produkte.html"> <button class ="butoniInspirohu" >Blej Tani</button></a>
+        <a href="../Products Page/produkte.php"> <button class ="butoniInspirohu" >Blej Tani</button></a>
     </div> 
     </div>
     <h2 id="pllakaTitull">PLLAKA</h2>
         <div class="Produktet">
         
-            <div id="banjo"><p>Banjo</p><a class="produkte" href="../Products Page/produkte.html"><img src="banjo.jpg" alt="banjo"></a></div>
-            <div id="Dysheme"><p>Porcelan</p><a class="produkte" href="../Products Page/produkte.html"><img src="porcelain.jpg" alt="dysheme"></a></div>
-            <div id="Porcelan"><p>Dysheme</p><a class="produkte" href="../Products Page/produkte.html"><img src="qeramike.jpg" alt="porcelain"></a></div>
+            <div id="banjo"><p>Banjo</p><a class="produkte" href="../Products Page/produkte.php"><img src="banjo.jpg" alt="banjo"></a></div>
+            <div id="Dysheme"><p>Porcelan</p><a class="produkte" href="../Products Page/produkte.php"><img src="porcelain.jpg" alt="dysheme"></a></div>
+            <div id="Porcelan"><p>Dysheme</p><a class="produkte" href="../Products Page/produkte.php"><img src="qeramike.jpg" alt="porcelain"></a></div>
 
         </div>
         
@@ -142,11 +142,11 @@ if (isset($_SESSION['role'])) {
          
                 <ul class="listaDIV">
 
-                <li><a id="Ballina" style="text-decoration: none;" href="../Home Page/home.html">Ballina</a></li>
-                <li><a style="text-decoration: none;" href="../Products Page/produkte.html">Produkte</a></li>
-                <li><a style="text-decoration: none;" href="../Ambients Page/ambient.html">Ambiente</a></li>
-                <li><a style="text-decoration: none;" href="../About Us Page/aboutus.html">Rreth nesh</a></li> 
-                <li><a style="text-decoration: none;" href="../Kontakt Page/kontakt.html">Kontakti</a></li>
+                <li><a id="Ballina" style="text-decoration: none;" href="../Home Page/home.php">Ballina</a></li>
+                <li><a style="text-decoration: none;" href="../Products Page/produkte.php">Produkte</a></li>
+                <li><a style="text-decoration: none;" href="../Ambients Page/ambient.php">Ambiente</a></li>
+                <li><a style="text-decoration: none;" href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
+                <li><a style="text-decoration: none;" href="../Kontakt Page/kontakt.php">Kontakti</a></li>
                 
             </ul>
         

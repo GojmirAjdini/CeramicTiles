@@ -38,6 +38,12 @@ body{
     margin-left: 70px;
 }
 
+.navEND #logout{
+
+    height: 22px;
+    width: 22px;
+}
+
 .listaEND #ambiente{
 
     color: white;
@@ -99,6 +105,13 @@ body{
     
 }
 
+.navEND .logout {
+
+    display: flex;  
+    margin-top: -2px; 
+
+}
+
 .sideBar{
     position: fixed;
     top: 0;
@@ -133,6 +146,11 @@ body{
     display: flex;
 }
 
+.sideBar #logoutMobile{
+    height: 25px;
+    width: 25px;
+}
+
 .sideBar li a{
     display: flex;
     align-items: center;
@@ -151,7 +169,7 @@ body{
     width: fit-content;
  
 }
-@media(max-width:900px){
+@media(max-width:1120px){
 
     .hideMobile{
 

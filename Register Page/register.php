@@ -12,7 +12,7 @@
 
         <img src="../Products Page/robur.jpg" alt="">
     <div id="formaDIV">
-        <form id="form" action="">
+        <form id="form" action="../Login Page/login.php">
 
             <h3>Register</h3>
 
@@ -37,7 +37,7 @@
             </div>
             
             <input type="submit" id="submit" name="submit" value="Register ">
-            <p>Already have an account? <span> <a href="../Login Page/login.html">Login</a>  </span></p>
+            <p>Already have an account? <span> <a href="../Login Page/login.php">Login</a>  </span></p>
         </form>
     </div> 
 </div>

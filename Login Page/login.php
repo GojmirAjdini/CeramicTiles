@@ -31,7 +31,7 @@
                     <option value="user">User</option>
                 <input type="submit" id="submit" name="submit" value="Login">
                 
-                <p>Don't have an account? <span><a href="../Register Page/register.html">Register</a></span></p>
+                <p>Don't have an account? <span><a href="../Register Page/register.php">Register</a></span></p>
             </form>
         </div>
     </div>

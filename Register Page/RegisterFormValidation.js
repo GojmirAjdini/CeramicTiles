@@ -29,7 +29,7 @@
                 usernameMsg.innerText = "Shkruani Emrin e perdoruesit.";
                 isValid = false;
             } else if (!usernameRegex.test(username)) {
-                usernameMsg.innerText = "Emri i perdoruesit duhet te filloje me shkronje te madhe!";
+                usernameMsg.innerText = "Emri i përdoruesit duhet të fillojë me shkronjë të madhe!";
                 isValid = false;
             }
             
@@ -37,7 +37,7 @@
                 emailMsg.innerText = "Shkruani Emailin.";
                 isValid = false;
             }else if(!emailRegex.test(email)){
-                emailMsg.innerText = "Formati juaj i Emailit eshte invalid!"
+                emailMsg.innerText = "Formati juaj i Emailit është invalid!"
                 isValid = false;
             }
             
@@ -45,7 +45,7 @@
                 passwordMsg.innerText = "Shkruani Passwordin.";
                 isValid = false;
             } else if (!passwordRegex.test(password)) {
-                passwordMsg.innerText = "Passwordi duhet te filloje me shkronje te madhe dhe te kete minimumi 8 karaktere!";
+                passwordMsg.innerText = "Passwordi duhet të fillojë me shkronjë të madhe dhe të ketë minimumi 8 karaktere!";
                 isValid = false;
             }
 
@@ -54,7 +54,7 @@
                 isValid = false; 
             }
             else if (confirmPassword != password){
-                confirmPasswordMsg.innerText = "Ju lutem kontrolloni se a keni karakteret e njejta!";
+                confirmPasswordMsg.innerText = "Ju lutem kontrolloni se a keni karakteret e passwordit të njejta!";
                 isValid = false;
             }
 

@@ -71,6 +71,25 @@ body{
 
 }
 
+.navEND #logout{
+
+    height: 22px;
+    width: 22px;
+}
+
+
+.navEND .logout {
+
+    display: flex;  
+    margin-top: -2px; 
+
+}
+
+.sideBar #logoutMobile{
+    height: 25px;
+    width: 25px;
+}
+
 .navEND a:hover{
 
     color: white;
@@ -146,7 +165,7 @@ body{
     width: fit-content;
  
 }
-@media(max-width:1090px){
+@media(max-width:1100px){
 
     .hideMobile{
 
