@@ -305,6 +305,53 @@
     
 }   
 
+@media(max-width:700px){
+
+    #formContainer input{
+
+        padding:15px;
+        border: 0;
+        background-color: rgb(241, 241, 241);
+        transition: 0.3s ease-out;
+        border: 1px solid rgb(163, 163, 163);
+        height: 20px;
+        width: 300px;
+        
+    }
+    .grupoDIV{
+
+        width: 300px;
+        margin-bottom: 0px;
+        text-align: start;
+    }
+
+    #formContainer .grupoDIV {
+
+        margin-left: -15px;
+        margin-right: 15px;
+    }
+
+    #formContainer #mesazh{
+
+        width: 310px;
+    }
+    #formContainer .grupoDIV #HeadingID{
+
+        margin-right: 20px;
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 25px;
+        margin-top: 50px;
+    }
+
+    #formContainer #register{
+
+        padding-left: 20px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+}
+
 @media(max-width:400px){
 
     #formContainer input{
