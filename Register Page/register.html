@@ -12,28 +12,28 @@
 
         <img src="../Products Page/robur.jpg" alt="">
     <div id="formaDIV">
-        <form action="../Home Page/home.html">
+        <form id="form" action="">
 
             <h3>Register</h3>
 
             <div id="emriDIV" class="inputDIV">
-            <label for="emri"></label><br>
-            <input placeholder="Emri" type="text" name="emri"/><br><br>
+            <label id="usernameMessage" for="emri"></label><br>
+            <input id="username" placeholder="Username" type="text" name="emri"/><br><br>
             </div>
 
             <div id="emailDIV" class="inputDIV">
-            <label for="email"></label><br>
-            <input placeholder="Email" type="text" name="email"/><br><br>
+            <label id="emailMessage" for="email"></label><br>
+            <input id="email" placeholder="Email" type="text" name="email"/><br><br>
             </div>
             
             <div id="pwDIV" class="inputDIV">
-            <label for="password"></label><br>
-            <input placeholder="Password" type="password" name="psw"/><br><br>
+            <label id="passwordMessage" for="password"></label><br>
+            <input id="password" placeholder="Password" type="password" name="psw"/><br><br>
             </div>
 
             <div id="pwDIV" class="inputDIV">
-            <label for="password"></label><br>
-            <input placeholder="Confirm Password" type="password" name="psw"/><br><br>
+            <label id="confirmMessage" for="confirmpMessage"></label><br>
+            <input id="confirmPassword" placeholder="Confirm Password" type="password" name="psw"/><br><br>
             </div>
             
             <input type="submit" id="submit" name="submit" value="Register ">
@@ -41,6 +41,6 @@
         </form>
     </div> 
 </div>
-
+        <script src="./RegisterFormValidation.js"></script>
 </body>
 </html>

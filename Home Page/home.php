@@ -1,3 +1,55 @@
+<?php
+session_start();
+
+$admin = 'Gojmir';
+$admin_password = 'Gojmir12345';
+
+$user = 'User';
+$user_password = 'User12345';
+
+if (isset($_SESSION['role'])) {
+    if ($_SESSION['role'] === 'admin') {
+        if (!isset($_SESSION['alert_shown'])) {
+            echo "<script>alert('Pershendetje Admin - " . $_SESSION['username'] . "');</script>";
+            $_SESSION['alert_shown'] = true; // Set the session flag
+        }
+        echo "<a href='dashboard.php'>Dashboard</a><br>";
+        echo "<br><a href='logout.php'>Logout</a><br>";
+    } elseif ($_SESSION['role'] === 'user') {
+        if (!isset($_SESSION['alert_shown'])) {
+            echo "<h1>Pershendetje Perdorues - " . $_SESSION['username'] . "</h1><br>";
+            echo "<script>alert('Pershendetje Perdorues - " . $_SESSION['username'] . "');</script>";
+            $_SESSION['alert_shown'] = true; // Set the session flag
+        }
+        echo "<br><a href='logout.php'>Logout</a><br>";
+    }
+} else {
+    if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['Roli'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $role = $_POST['Roli'];
+
+        if ($role == 'admin' && $username == $admin && $password == $admin_password) {
+            $_SESSION['username'] = $admin;
+            $_SESSION['role'] = 'admin';
+            header("Location: home.php");
+            exit();
+        } elseif ($role == 'user' && $username == $user && $password == $user_password) {
+            $_SESSION['username'] = $user;
+            $_SESSION['role'] = 'user';
+            header("Location: ../Home Page/home.php");
+            exit();
+        } else {
+            echo "<script>alert('Perdoruesi ose Fjalekalimi GABIM!'); location.href='../Home Page/home.php';</script>";
+        }
+    } else {
+        header("Location:../Login Page/login.php");
+        exit();
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +67,7 @@
 
     <ul class="listaStart">
 
-    <li><a href="home.html"> <img class="deltaLogo" src="Delta-logo.png" alt=""></a></li>
+    <li><a href="home.php"> <img class="deltaLogo" src="Delta-logo.png" alt=""></a></li>
     
     </ul>
     <div class="navEND">
@@ -35,7 +87,7 @@
     <ul class="sideBar">
 
         <li id="hideIcon" onclick=closeSideBar(event)><a class="hideIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li><a id="Ballina" href="../Home Page/home.html">Ballina</a></li>
+        <li><a id="Ballina" href="../Home Page/home.php">Ballina</a></li>
         <li><a href="../Products Page/produkte.html">Produkte</a></li>
         <li><a href="../Ambients Page/ambient.html">Ambiente</a></li>
         <li><a href="../About Us Page/aboutus.html">Rreth nesh</a></li> 

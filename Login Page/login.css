@@ -15,6 +15,7 @@
     background:transparent;
     background-image: linear-gradient(rgba(187, 187, 187, 0.091), rgba(229, 225, 225, 0.05), rgba(203, 203, 203, 0.205));
     z-index: 99;
+    margin: 30px;
 }
 
 @media (max-width:550px){
@@ -27,13 +28,11 @@
 
     display: flex;
     position: absolute;
-    height:100vh;
+    height: 100vh;
     width: 100%;
     z-index: 1;
-    filter: brightness(80px);
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    object-fit:cover;
+    filter: brightness(50%) blur(5px);
+    -webkit-filter:brightness(50%) blur(5px);
     
 }
 #formaDIV h3{
@@ -132,10 +131,41 @@ p{
     transition: 0.3s ease-out;
 }
 
-.inputDIV .labelMsg {
-    color: red; /* Ensure the text is visible */
-    font-size: 16px; /* Set a reasonable font size */
-    display: flex; /* Make sure label is rendered as a block element */
-    z-index: 99; /* Ensure it's on top of other elements */
-    margin-bottom: 5px; /* Optional for spacing */
+
+label{
+
+    display: block;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+select{
+    
+    margin-left: -85px;
+    margin-right: 10px;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s ease-in;
+}
+select:focus{
+
+    background-color: rgba(255, 255, 255, 0.142);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+select:hover{
+
+    background-color: rgba(255, 255, 255, 0.142);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+option{
+    background-color:rgba(50,50,50);
+    border: none;
+    color: white;
 }

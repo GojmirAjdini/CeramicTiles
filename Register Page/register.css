@@ -16,6 +16,7 @@
     background:transparent;
     background-image: linear-gradient(rgba(187, 187, 187, 0.091), rgba(229, 225, 225, 0.05), rgba(203, 203, 203, 0.205));
     z-index: 99;
+    margin: 30px;
 }
 
 @media (max-width:550px){
@@ -32,9 +33,8 @@
     height: 100vh;
     width: 100%;
     z-index: 1;
-    filter: brightness(80px);
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: brightness(50%) blur(5px);
+    -webkit-filter:brightness(50%) blur(5px);
     
 }
 #formaDIV h3{
@@ -131,4 +131,14 @@ p{
     color: rgba(0, 0, 0, 0.986);
     text-decoration: none;
     transition: 0.3s ease-out;
+}
+
+label {
+    display: block;
+    color: red;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
 }

@@ -1,42 +1,41 @@
-<?php
-    function MetodaPOST(){
-
-        if(isset($_POST['submit'])){
-            $perdoruesi = $_POST['email'];
-            $password = $_POST['psw'];
-            echo 'Pershendetje per ju <br> Perdoruesi: ', $perdoruesi,
-            '<br> Fjalekalimi: ',$password;
-        exit();
-        }
-        else{
-            echo 'Ju nuk keni shtypur butonin Login';
-        }
-
-
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./login.css">
     
-        <form action="login.php" method="POST">
+</head> 
+<body>
 
-            <label for="username">Username</label><br>
-            <input type="text" name="user"/><br><br>
+    <div id="PageContainer">
+        <img src="../Products Page/robur.jpg" alt="">
+        <div id="formaDIV">
+            <form id="form" action="../Home Page/home.php" method="POST">
 
-            <label for="password">Password</label><br>
-            <input type="password" name="psw"/><br><br>
+                <h3>Login</h3>
 
-            <input type="submit" name="submit" value="Login ">
-        </form>
-        <h5><?php MetodaPOST()?> </h5>
+                <div id="emailDIV" class="inputDIV">
+                    <label class="labelMsg" for="username" id="usernameMessage"></label><br>
+                    <input placeholder="Username" type="text" name="username" id="username"/><br><br>
+                </div>
+                
+                <div id="pwDIV" class="inputDIV">
+                    <label class="labelMsg" for="password" id="passwordMessage"></label><br>
+                    <input placeholder="Password" type="password" name="password" id="password"/><br><br>
+                </div>
+                <select name="Roli">Roli
 
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                <input type="submit" id="submit" name="submit" value="Login">
+                
+                <p>Don't have an account? <span><a href="../Register Page/register.html">Register</a></span></p>
+            </form>
+        </div>
+    </div>
 
+    <script src="./LoginFormValidation.js"></script>
 </body>
 </html>
