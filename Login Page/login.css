@@ -131,7 +131,18 @@ p{
     transition: 0.3s ease-out;
 }
 
+@media (max-width:550px){
 
+    #PageContainer #formaDIV{
+        padding: 40px;
+}
+
+#submit {
+    padding-left: 30px;     
+    padding-right: 30px;    
+    font-size: 12px;    
+}
+}
 label{
 
     display: block;

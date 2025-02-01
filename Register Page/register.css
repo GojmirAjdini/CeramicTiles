@@ -19,12 +19,6 @@
     margin: 30px;
 }
 
-@media (max-width:550px){
-
-    #PageContainer #formaDIV{
-        padding: 40px;
-}
-}
 
 #PageContainer img{
 
@@ -89,14 +83,27 @@ input:focus::placeholder{
     border-left: 0;
     border-right: 0;
     padding-top:7px ;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right:95px;
+    padding-left:95px;
     padding-bottom:7px ;
     border-radius: 30px;
     justify-content: center;
     transition: 0.3s ease-in;
     background:transparent;
     font-size: 15px;
+}
+
+@media (max-width:550px){
+
+    #PageContainer #formaDIV{
+        padding: 40px;
+}
+
+#submit {
+    padding-left: 30px;     
+    padding-right: 30px;    
+    font-size: 12px;    
+}
 }
 
 #submit:hover{
@@ -141,4 +148,33 @@ label {
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
+}
+select{
+    
+    margin-left: -85px;
+    margin-right: 10px;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    transition: 0.3s ease-in;
+}
+select:focus{
+
+    background-color: rgba(255, 255, 255, 0.142);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+select:hover{
+
+    background-color: rgba(255, 255, 255, 0.142);
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+option{
+    background-color:rgba(50,50,50);
+    border: none;
+    color: white;
 }

@@ -1,28 +1,28 @@
         
-       const usernameRegex = /^[A-Z][A-Za-z0-9]*$/;  
+       const emailRegex = /^\w+[._-]?\w+@[a-z]+\.[a-z]{2,3}/;  
        const passwordRegex = /^[A-Z].{7,}$/; 
        
        const form = document.getElementById("form");
     
         form.addEventListener("submit", function(event) {
             
-            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
            
-            const usernameMsg = document.getElementById("usernameMessage");
+            const emailMsg = document.getElementById("emailMessage");
             const passwordMsg = document.getElementById("passwordMessage");
             
-            usernameMsg.innerText = "";
+            emailMsg.innerText = "";
             passwordMsg.innerText = "";
     
             let isValid = true;
     
            
-            if (username == "") {
-                usernameMsg.innerText = "Shkruani Emrin e perdoruesit.";
+            if (email == "") {
+                emailMsg.innerText = "Shkruani Emailin!.";
                 isValid = false;
-            } else if (!usernameRegex.test(username)) {
-                usernameMsg.innerText = "Emri i perdoruesit duhet te filloje me shkronje te madhe!";
+            } else if (!emailRegex.test(email)) {
+                emailMsg.innerText = "Formati juaj i Emailit është invalid!";
                 isValid = false;
             }
     

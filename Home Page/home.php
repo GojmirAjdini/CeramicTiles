@@ -1,54 +1,24 @@
 <?php
 session_start();
 
-$admin = 'Gojmir';
-$admin_password = 'Gojmir12345';
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../Login Page/login.php"); 
+    exit;
+}
 
-$user = 'User';
-$user_password = 'User12345';
-
-if (isset($_SESSION['role'])) {
-    if ($_SESSION['role'] === 'admin') {
-        if (!isset($_SESSION['alert_shown'])) {
-            echo "<script>alert('Pershendetje Admin - " . $_SESSION['username'] . "');</script>";
-            $_SESSION['alert_shown'] = true; // Set the session flag
-        }
-        echo "<a href='dashboard.php'>Dashboard</a><br>";
-        echo "<br><a href='logout.php'>Logout</a><br>";
-    } elseif ($_SESSION['role'] === 'user') {
-        if (!isset($_SESSION['alert_shown'])) {
-            echo "<h1>Pershendetje Perdorues - " . $_SESSION['username'] . "</h1><br>";
-            echo "<script>alert('Pershendetje Perdorues - " . $_SESSION['username'] . "');</script>";
-            $_SESSION['alert_shown'] = true; // Set the session flag
-        }
-        echo "<br><a href='logout.php'>Logout</a><br>";
-    }
+if ($_SESSION['role'] == 'admin') {
+    echo "Përshendetje Admin, " . $_SESSION['email'] . "!";
+    
+} elseif ($_SESSION['role'] == 'user') {
+    echo "Përshendetje User, " . $_SESSION['email'] . "!";
+    
 } else {
-    if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['Roli'])) {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $role = $_POST['Roli'];
 
-        if ($role == 'admin' && $username == $admin && $password == $admin_password) {
-            $_SESSION['username'] = $admin;
-            $_SESSION['role'] = 'admin';
-            header("Location: home.php");
-            exit();
-        } elseif ($role == 'user' && $username == $user && $password == $user_password) {
-            $_SESSION['username'] = $user;
-            $_SESSION['role'] = 'user';
-            header("Location: ../Home Page/home.php");
-            exit();
-        } else {
-            echo "<script>alert('Perdoruesi ose Fjalekalimi GABIM!'); location.href='../Home Page/home.php';</script>";
-        }
-    } else {
-        header("Location:../Login Page/login.php");
-        exit();
-    }
+    session_destroy();
+    header("Location: ../Login Page/login.php");
+    exit;
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
