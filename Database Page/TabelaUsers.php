@@ -59,6 +59,9 @@ class User {
     
                 return true;
             } 
+            else{
+                echo "<script> alert('Kredencialet tuaja janë gabim!') </script";
+            }
         }
     
         return false;

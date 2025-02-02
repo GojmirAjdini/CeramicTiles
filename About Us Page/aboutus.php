@@ -61,21 +61,21 @@ if (!isset($_SESSION['role'])) {
         <div id="RrethNeshID">
         <h2>RRETH NESH</h2>
         
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero aliquid repellendus qui cupiditate perspiciatis temporibus maxime numquam rerum blanditiis quos esse consequatur earum animi magni magnam, iste at maiores!
-        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero aliquid repellendus qui cupiditate perspiciatis temporibus maxime numquam rerum blanditiis quos esse consequatur earum animi magni magnam, iste at maiores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero aliquid repellendus qui cupiditate perspiciatis temporibus maxime numquam rerum blanditiis quos esse consequatur earum animi magni magnam, iste at maiores! </p>    </div>
-
+        <p>Delta Qeramika e themeluar në vitin 2008 nga familja Veçgishti ne qytetin e bukur të Prizrenit.
+Kompania që në fillimet e saja veprimtarinë kryesore të saj e kishte tregtinë me pllaka të qeramikes 
+Duke pasur si frymëzim inovacionin në ofertën ndaj klientëve, Delta Qeramika arriti të vendosë partneritet me disa nga prodhuesit më të njohur të produkteve të qeramikës nga Spanja, India , Egjipti dhe më gjerë.
+Kjo i ka mundësuar që t’i ofrojë klientit trendet më të reja botërore të produkteve të qeramikës dhe të krijojë një besim të palëkundshëm në tregun kosovarë. </p>
+</div>
     <div id="misioniID">
 
         <div class="tekstiID"> 
         <h2>Misioni ynë</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem eos aperiam accusamus neque, quibusdam saepe, illo unde modi magnam expedita ipsum suscipit laboriosam, vero placeat voluptatum voluptate deleniti velit!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque consequuntur quo. Magnam dolores tempora officia pariatur accusantium, quas quibusdam, qui inventore cum assumenda ducimus, aliquam neque perspiciatis illo facilis.
+        <p>Delta Qeramika me misionin kryesorë të saj ka të siguron një shërbim me kualitet më të larte dhe të krijojë besim te konsumatoret, të krijojë relacion bashkëpunues për kohë të gjata .
+           Po ashtu me mision primarë ka dhe përmbushjen e kërkesave të klientit duke sjellur modelet dhe trendet e fundit botërore.
         </p>
 
         <h2>Vizioni ynë</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem eos aperiam accusamus neque, quibusdam saepe, illo unde modi magnam expedita ipsum suscipit laboriosam, vero placeat voluptatum voluptate deleniti velit!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque consequuntur quo. Magnam dolores tempora officia pariatur accusantium, quas quibusdam, qui inventore cum assumenda ducimus, aliquam neque perspiciatis illo facilis.
+        <p>Vizioni i Delta Qeramikes është që të ndërtojë një bazament të fuqishëm në industrinë e qeramikës, bazuar në produkte kualitative, shërbim të nivelit të lartë, një ambient mikpritës, dhe këtë përvojë të mund të replikohet edhe në fusha të tjera në zgjerimin e veprimtarisë afariste.
         </p>
         
     </div>
@@ -87,9 +87,10 @@ if (!isset($_SESSION['role'])) {
         
         <div class="imazheTekst"><h2>Çka ofrojmë ne ?</h2>
         <ul>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aspernatur itaque. Minus sed voluptatum facilis! Error sint, adipisci incidunt explicabo sequi vel enim eaque fuga facilis, ad similique dolores eum.</li><br>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis quas ducimus, laborum repellat temporibus voluptatem. Similique eligendi consequuntur voluptates consectetur eius assumenda, maxime, consequatur eos exercitationem blanditiis fugiat dolorem.</li><br>
-            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ab qui saepe distinctio perferendis necessitatibus excepturi provident quos laudantium consequatur? Dignissimos quibusdam laudantium voluptatibus commodi, optio repellendus laborum sint labore.</li>
+            <li><span>Pllaka qeramike të cilësisë së lartë</span> – Me bashkëpunim me prodhuesit më të njohur nga Spanja, India, Egjipti dhe vende të tjera, sjellim trendet më të reja në treg.</li> <br>    
+            <li><span>Dizajne dhe stile të ndryshme </span> – Ne ndjekim inovacionin dhe sjellim modele të reja për të përshtatur çdo ambient, qoftë klasik apo modern.</li> <br>
+            <li><span>Shërbim profesional dhe këshillim </span>– Stafi ynë me përvojë është gjithmonë i gatshëm t'ju ndihmojë të zgjidhni produktin e duhur për hapësirën tuaj.</li> <br>
+            <li><span>Besim dhe korrektësi </span>– Marrëdhëniet tona me klientët bazohen në besim të ndërsjellë dhe shërbim të përkushtuar për një përvojë blerjeje të kënaqshme.</li> <br>  
         </ul>
         </div>
     </div>
@@ -98,9 +99,9 @@ if (!isset($_SESSION['role'])) {
 
         <div class="imazheTekst2"><h2>Çfarë e veçon Delta Qeramikën ?</h2>
         <ul>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, aspernatur itaque. Minus sed voluptatum facilis! Error sint, adipisci incidunt explicabo sequi vel enim eaque fuga facilis, ad similique dolores eum.</li><br>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis quas ducimus, laborum repellat temporibus voluptatem. Similique eligendi consequuntur voluptates consectetur eius assumenda, maxime, consequatur eos exercitationem blanditiis fugiat dolorem.</li><br>
-            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ab qui saepe distinctio perferendis necessitatibus excepturi provident quos laudantium consequatur? Dignissimos quibusdam laudantium voluptatibus commodi, optio repellendus laborum sint labore.</li>
+            <li>Delta Qeramiken e veçon produketet që i ofrojmë me prodhues të klasit të parë.</li><br>
+            <li>Shërbimin ndaj klientëve dhe po ashtu besimin që krijojme tek secili klient i yni.</li> <br>
+            <li>Profesionalizmi është një nga veçoritë kryesore që ne posedojmë dhe një pervojë shumë vjecare po ashtu dhe produktet me kualitet nga prodhuesit lider botëror.</li>
         </ul>
         </div>
         
