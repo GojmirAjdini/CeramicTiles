@@ -97,6 +97,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="grupoDIV">
             <h2 id="HeadingID">Na kontakto</h2>
             </div>
+
+            <!-- Display message here -->
+            <?php if (!empty($message)): 
+                ?>
+                <div id="message" class="message">
+                    <?php echo $message; ?></div>
+            <?php endif; ?>
             <form id="form" action="" method="POST">
             
                 <div class="grupoDIV">
@@ -114,7 +121,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                </div>
 
                 <div class="grupoDIV">
-                <textarea id="mesazh" name="mesazh" placeholder="Mesazhi.." class="login"></textarea>  
+                <textarea id="mesazh" name="mesazh" placeholder="Mesazhi.." class="login"></textarea> 
+                <label for="mesazh" id="mesazhMessage"></label><br> <br> 
                </div> 
 
                 <input type="submit" id="register" class="login" value="Dërgo">

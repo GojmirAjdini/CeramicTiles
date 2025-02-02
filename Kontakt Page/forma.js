@@ -10,14 +10,19 @@
             const name = document.getElementById("name").value;
             const surname = document.getElementById("surname").value;
             const email = document.getElementById("email").value;
+            const mesazh = document.getElementById("mesazh").value;
+            
            
             const nameMsg = document.getElementById("nameMessage");
             const surnameMsg = document.getElementById("surnameMessage");
             const emailMsg = document.getElementById("emailMessage");
+            const mesazhMsg = document.getElementById("mesazhMessage");
+
             
             nameMsg.innerText = "";
             surnameMsg.innerText = "";
             emailMsg.innerText = "";
+            mesazhMsg.innerText = "";
             
     
             let isValid = true;
@@ -27,7 +32,7 @@
                 nameMsg.innerText = "Shkruani Emrin.";
                 isValid = false;
             } else if (!nameRegex.test(name)) {
-                nameMsg.innerText = "Emri duhet te filloje me shkronje te madhe dhe te kete vetem shkronja.";
+                nameMsg.innerText = "Emri duhet të fillojë me shkronjë të madhe dhë të ketë vetëm shkronja.";
                 isValid = false;
             }
     
@@ -35,7 +40,7 @@
                 surnameMsg.innerText = "Shkruani Mbiemrin.";
                 isValid = false;
             } else if (!surnameRegex.test(surname)) {
-                surnameMsg.innerText = "Mbiemri duhet te filloje me shkronje te madhe dhe te kete vetem shkronja.";
+                surnameMsg.innerText = "Mbiemri duhet të fillojë me shkronjë të madhe dhe të ketë vetëm shkronja.";
                 isValid = false;
             }
 
@@ -43,7 +48,12 @@
                 emailMsg.innerText = "Shkruani Emailin.";
                 isValid = false;
             }else if(!emailRegex.test(email)){
-                emailMsg.innerText = "Formati juaj i Emailit eshte invalid!"
+                emailMsg.innerText = "Formati juaj i Emailit është invalid!"
+                isValid = false;
+            }
+
+            if(mesazh == ""){
+                mesazhMsg.innerText = "Mesazhi nuk duhet të jetë i zbrazët";
                 isValid = false;
             }
         if(!isValid){

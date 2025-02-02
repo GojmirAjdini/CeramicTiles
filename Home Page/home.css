@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -128,10 +129,6 @@ body{
     color: white;
     padding-left: 50px;
 }
-#hideIcon{
-    padding-right:10%;
- 
-}
 .sideBar li{
     height: 12vh;
     list-style-type: none;
@@ -159,10 +156,41 @@ body{
 
 #hideIcon{
     width: fit-content;
- 
+    
 }
 
-@media(max-width:1105px){
+#dashboardIMG{
+
+    height: 25px;
+    width: 25px;
+    width: fit-content;
+    padding: 0;
+    
+}
+
+.iconDIV{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 100px;
+}
+.iconDIV a{
+    padding: 50px;
+}
+.iconDIV #hideIcon{
+
+    margin-left: -20px;
+  
+}
+
+#dashboardHref{
+
+    width: fit-content;
+}
+
+@media(max-width:1280px){
 
     .hideMobile{
 
@@ -178,7 +206,7 @@ body{
 
 }
 
-@media (max-width:400px){
+@media (max-width:500px){
 
    .sideBar{
     width: 300px;
@@ -196,6 +224,12 @@ body{
     align-items: center;
 }
 
+.iconDIV #hideIcon{
+
+    margin-left: 0;
+    margin-right: -130px;
+    gap:20px
+}
 #footerContainer .socialIcons{
 
     justify-content: center;
