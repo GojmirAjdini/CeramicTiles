@@ -62,7 +62,7 @@ $ambients = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 $imageURL = "imazhe/" . $imagePath;
 
-                echo "<div class='foto'><a href='#'><img src='$imageURL' alt='Ambient'></a></div>";
+                echo "<div class='foto'><a href='$imageURL'><img src='$imageURL' alt='Ambient'></a></div>";
             }
             ?>
         </div>

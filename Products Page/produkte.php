@@ -67,10 +67,13 @@ $produkte = $stmt->fetchAll(PDO::FETCH_ASSOC);
             foreach ($produkte as $produkt) {
                 $produktName = $produkt['name']; 
                 $imagePath = $produkt['image_path']; 
+
+                $imageURL = "imazhe/" . $imagePath;
+
                 echo "<div class='foto'>
                         <p>$produktName</p>
-                        <a href='#'></a>
-                        <img src='imazhe/$imagePath' alt='$produktName'>
+                        <a href='$imageURL'></a>
+                        <img src='$imageURL' alt='$produktName'>
                       </div>";
             }
             ?>
