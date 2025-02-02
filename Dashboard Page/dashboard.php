@@ -1,13 +1,6 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-    echo "<script>
-    alert('Ju nuk keni qasje në këtë faqe');
-    window.location.href = '../Home Page/home.php'; </script>";
-exit;
-}
-
 include_once '../Database Page/Database.php';
 $db = new Database();
 $connection = $db->getConnection();
@@ -16,7 +9,6 @@ $query = "SELECT * FROM kontakti ORDER BY id DESC";
 $stmt = $connection->prepare($query);
 $stmt->execute();
 $kontakti = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -67,40 +59,14 @@ $kontakti = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <li><a href="../Logout Pag/Logout.php"><img id="logoutMobile" src="./logout-white.png" alt=""></a></li>
 
         </ul>
+    <div id="divAdmin">
     <h1>ADMIN DASHBOARD</h1>
-    <h2>Kontaktet prej klientëve</h2>
 
-    <?php
-        if (empty($kontakti)) {
-    echo '<p style="color: red; font-weight: bold;">Ju nuk keni kontakte.</p>';
-} ?>
-
-    <div id="tableDIV">
-    <table border="1">
-        <tr>
-            <th>Emri</th>
-            <th>Mbiemri</th>
-            <th>Email</th>
-            <th>Mesazhi</th>
-        </tr>
-        <?php
-        $fundit = true; 
-        foreach ($kontakti as $kontakt): ?>
-        <tr>
-            <td><?php echo $kontakt['name']; ?></td>
-            <td><?php echo $kontakt['surname']; ?></td>
-            <td><?php echo $kontakt['email']; ?></td>
-            <td>
-                <?php echo $kontakt['message']; ?>
-                <?php if ($fundit): ?>
-                <span>(NEW)</span>
-                <?php $fundit = false; ?>
-                <?php endif; ?>    
-            </td>
-        </tr>
-        <?php endforeach; ?>
-    </table>
-        </div>
+    <div id="dataDIV">
+        <a id="kontaktetID" href="../Dashboard Page/kontrolloKontaktet.php">Shiko kontaktet</a>
+        <a id="usersID" href="../Dashboard Page/menaxhoUsers.php">Redakto Përdoruesit</a>
+    </div>
+</div>
     </div>
 </body>
 </html>

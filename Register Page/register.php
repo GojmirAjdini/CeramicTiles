@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div id="PageContainer">
 
-        <img src="../Products Page/robur.jpg" alt="">
+        <img src="../Products Page/imazhe/robur.jpg" alt="">
     <div id="formaDIV">
         <form id="form" action="" method="POST">
 
