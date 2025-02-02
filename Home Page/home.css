@@ -156,13 +156,16 @@ body{
 
 #hideIcon{
     width: fit-content;
+    position: absolute;
+    top: 20px;
+    left: 20px;
     
 }
 
 #dashboardIMG{
 
     height: 25px;
-    width: 25px;
+    width: 45px;
     width: fit-content;
     padding: 0;
     
@@ -188,6 +191,9 @@ body{
 #dashboardHref{
 
     width: fit-content;
+    margin-top: 28px;
+    margin-right: -200px;
+    margin-left: -30px;
 }
 
 @media(max-width:1280px){
@@ -213,7 +219,7 @@ body{
    }
     #navBar #menuIcon{
     justify-content: flex-end;
-   margin-right: -50px;
+   margin-right: -40px;
    }
    #navBar .deltaLogo{
 
@@ -222,6 +228,11 @@ body{
     justify-content: flex-start;
     margin-left: 20px;
     align-items: center;
+}
+
+#dashboardHref{
+
+    margin-right: -150px;
 }
 
 .iconDIV #hideIcon{

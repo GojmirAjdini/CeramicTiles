@@ -6,6 +6,8 @@
         exit;
     }
 
+    $eshteAdmin = isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
+
     if (!isset($_SESSION['welcome_shown'])) {
         if ($_SESSION['role'] == 'admin') {
             echo "<script>alert('Përshëndetje Admin, " . $_SESSION['email'] . "');</script>";
@@ -46,7 +48,10 @@
         <li class="hideMobile"><a id="ambiente" href="../Ambients Page/ambient.php">Ambiente</a></li>
         <li class="hideMobile"><a href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
         <li class="hideMobile"><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
+        <?php if ($eshteAdmin): ?>
         <li class="hideMobile"><a href="../Dashboard Page/dashboard.php">Dashboard</a></li>
+    <?php endif; ?>
+
         <li class="hideMobile"><a class="logout" href="../Logout Page/logout.php"><img id="logout" src="./logout.png" alt=""></a></li>
         <li id="menuIcon" onclick= showSideBar(event)><a class="menuIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
@@ -56,14 +61,16 @@
         <ul class="sideBar">
             <div class="iconDIV">
             <li id="hideIcon" onclick=closeSideBar(event)><a class="hideIcon" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <?php if($eshteAdmin): ?>
             <a id="dashboardHref" href="../Dashboard Page/dashboard.php">Dashboard</a>
+            <?php endif; ?>
             </div>
             <li><a id="Ballina" href="../Home Page/home.php">Ballina</a></li>
             <li><a href="../Products Page/produkte.php">Produkte</a></li>
             <li><a href="../Ambients Page/ambient.php">Ambiente</a></li>
             <li><a href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
             <li><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
-            <li><a href="../Logout Pag/Logout.php"><img id="logoutMobile" src="..Home Page/logout-white.png" alt=""></a></li>
+            <li><a href="../Logout Pag/Logout.php"><img id="logoutMobile" src="../Home Page/logout-white.png" alt=""></a></li>
 
         </ul>
         

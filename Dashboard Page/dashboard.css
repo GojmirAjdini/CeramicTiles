@@ -3,7 +3,6 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    
 }
 
 body{
@@ -190,17 +189,18 @@ body{
     width: fit-content;
 }
 
-#pageContainer{
+#pageContainer {
 
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
-
-} #tableDIV table{
-
-    margin: 20px;
-    padding: 15px;
+    width: 100%;
+}
+ table{
+    
     border: 0;
+    width: fit-content;
 }
 table th{
 
@@ -233,8 +233,52 @@ span{
     font-weight: bold;
 }
 
-@media(max-width:1280px){
+#pageContainer #tableDIV{
 
+    margin: 20px;
+}
+
+@media(max-width: 440px) {
+    #tableDIV {
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+
+    table {
+        width: 100%;
+        font-size: 10px; /* Smaller font size */
+        border-collapse: collapse;
+        table-layout: fixed; /* Ensure the table columns adjust to the available width */
+        margin: 0px;
+    }
+
+    table th, table td {
+        padding: 5px; /* Reduced padding to make the table smaller */
+        text-align: left;
+        word-wrap: break-word;
+    }
+
+    table th {
+        background-color: rgb(221, 230, 230);
+    }
+
+    table td {
+        background-color: rgb(226, 226, 226);
+    }
+
+    h1{
+
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width:1280px){
+    
     .hideMobile{
 
         display: none;
@@ -247,6 +291,14 @@ span{
         margin-bottom: 20px;
     }
 
+}
+
+@media (max-width:600px){
+
+    table{
+
+        font-size: 12px;
+    }
 }
 
 @media (max-width:500px){
