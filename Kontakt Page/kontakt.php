@@ -1,11 +1,45 @@
 <?php
-session_start();
+include_once '../Database Page/SessionCheck.php';
+include_once '../Database Page/Database.php';
 
-if (!isset($_SESSION['role'])) {
-    
-    header('Location: ../Login Page/login.php');
-    exit();
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $db = new Database();
+    $connection = $db->getConnection();
+
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $email = $_POST['email'];
+    $mesazh = $_POST['mesazh'];
+
+    // Insert into database
+    $query = "INSERT INTO kontakti (name, surname, email, message) VALUES (:name, :surname, :email, :message)";
+    $stmt = $connection->prepare($query);
+
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':surname', $surname);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':message', $mesazh);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Mesazhi u dërgua me sukses!'); window.location.href='kontakt.php';</script>";
+    } else {
+        echo "<script>alert('Gabim! Provo përsëri.');</script>";
+    }
+
+    $query = "SELECT * FROM kontakti";
+    $stmt = $connection -> prepare($query);
+    $stmt -> execute();
+    $kontakti = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($kontakti as $kontakt) {
+        echo "Name: " . $kontakt['name'] . "<br>";
+        echo "Surname: " . $kontakt['surname'] . "<br>";
+        echo "Email: " . $kontakt['email'] . "<br>";
+        echo "Message: " . $kontakt['message'] . "<br><br>";
+    }
+
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -63,24 +97,24 @@ if (!isset($_SESSION['role'])) {
             <div class="grupoDIV">
             <h2 id="HeadingID">Na kontakto</h2>
             </div>
-            <form id="form" action="">
+            <form id="form" action="" method="POST">
             
                 <div class="grupoDIV">
-                <input type="text" placeholder="Emri.." class="login" id="name"> 
+                <input type="text" placeholder="Emri.." class="login" name="name" id="name"> 
                 <label for="name" id="nameMessage"></label><br> <br>
                 </div> 
                 
                 <div class="grupoDIV">
-                <input type="text" placeholder="Mbiemri.." class="login" id="surname">
+                <input type="text" placeholder="Mbiemri.." class="login" name="surname" id="surname">
                 <label for="surname" id="surnameMessage"></label><br> <br>  
                </div>
                <div class="grupoDIV">
-                <input type="email" placeholder="Email.." class="login" id="email">
+                <input type="email" placeholder="Email.." class="login" name="email" id="email">
                 <label for="email" id="emailMessage"></label><br> <br>
                </div>
 
                 <div class="grupoDIV">
-                <textarea id="mesazh" placeholder="Mesazhi.." class="login"></textarea>  
+                <textarea id="mesazh" name="mesazh" placeholder="Mesazhi.." class="login"></textarea>  
                </div> 
 
                 <input type="submit" id="register" class="login" value="Dërgo">

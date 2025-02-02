@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once '../Database Page/Database.php';
 include_once '../Database Page/TabelaUsers.php';
 
@@ -6,7 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $db = new Database();
     $connection = $db->getConnection();
     $user = new User($connection);
-
     
     $username = $_POST['username'] ?? null; 
     $email = $_POST['email']?? null;
@@ -14,18 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $confirmPassword = $_POST['confirmPassword']?? null;
     $role = $_POST['role']?? null;
 
-    
-    if ($password !== $confirmPassword) {
-        echo "<script>alert('Passwords do not match!'); location.href='register.php';</script>";
-        exit;
-    }
-
     if ($user->register($username, $email, $password, $role)) {
         header("Location: ../Login Page/login.php");
         exit;
-    } else {
-        echo "<script> alert ('Gabim gjatë regjistrimit'); </script>";
-    }
+    } 
 }
 ?>
 
@@ -63,11 +55,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <div id="pwDIV" class="inputDIV">
-            <label id="confirmMessage" for="confirmpMessage"></label><br>
+            <label id="confirmMessage" for="confirmMessage"></label><br>
             <input id="confirmPassword" placeholder="Confirm Password" type="password" name="confirmPassword" required /><br><br>
             </div>
 
-            <select name="role" required >Roli    
+            <select id="role" name="role" required >Roli    
 
                     <option value="admin">Admin</option>
                     <option value="user">User</option>                

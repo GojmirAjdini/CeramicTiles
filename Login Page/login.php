@@ -14,7 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $role = $_POST['role'] ;
     
     if ($user->login($email, $password, $role)) {
-        header("Location: ../Home Page/home.php"); 
+    
+        header("Location: ../Home Page/home.php");
         exit;
     }
 }
@@ -47,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <label class="labelMsg" for="password" id="passwordMessage"></label><br>
                     <input placeholder="Password" type="password" name="password" id="password" required/><br><br>
                 </div>
-                <select name="role">Roli
+                <select name="role" id="role" required>Roli
 
                     <option value="admin">Admin</option>
                     <option value="user">User</option>
@@ -55,7 +56,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </select>
                 
                 <input type="submit" id="submit" name="submit" value="Login">
-                
                 
                 <p>Don't have an account? <span><a href="../Register Page/register.php">Register</a></span></p>
             </form>

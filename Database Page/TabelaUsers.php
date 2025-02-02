@@ -36,6 +36,7 @@ class User {
 }
 
     public function login($email, $password, $role) {
+        
         $query = "SELECT id, username, email, password, role FROM {$this->table_name} 
                   WHERE email = :email AND role = :role"; 
     
@@ -43,13 +44,15 @@ class User {
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':role', $role);
         $stmt->execute();
-    
+     
+
         if ($stmt->rowCount() > 0) {
+           
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    
+
             if (password_verify($password, $row['password'])) {
                 session_start();
-    
+
                 $_SESSION['user_id'] = $row['id'];
                 $_SESSION['email'] = $row['email']; 
                 $_SESSION['role'] = $row['role']; 

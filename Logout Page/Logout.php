@@ -1,13 +1,7 @@
-<?php 
+<?php
 session_start();
-
-if(isset($_SESSION['role'])){     
-    session_destroy(); 
-    header('Location: ../Login Page/login.php');
-   
-} else {
-    
-    header('Location: ../Login Page/login.php');
-    
-}
+session_unset();
+session_destroy();
+header("Location: login.php"); // Redirect to login page after logout
+exit;
 ?>
