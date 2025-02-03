@@ -70,7 +70,7 @@
             <li><a href="../Ambients Page/ambient.php">Ambiente</a></li>
             <li><a href="../About Us Page/aboutus.php">Rreth nesh</a></li> 
             <li><a href="../Kontakt Page/kontakt.php">Kontakti</a></li>
-            <li><a href="../Logout Pag/Logout.php"><img id="logoutMobile" src="../Home Page/logout-white.png" alt=""></a></li>
+            <li><a href="../Logout Page/Logout.php"><img id="logoutMobile" src="../Home Page/logout-white.png" alt=""></a></li>
 
         </ul>
         
