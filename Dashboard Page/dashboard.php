@@ -28,7 +28,7 @@ $kontakti = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <ul class="listaStart">
 
-        <li><a href="home.php"> <img class="deltaLogo" src="../Home Page/Delta-logo.png" alt=""></a></li>
+        <li><a href="../Home Page/home.php"> <img class="deltaLogo" src="../Home Page/Delta-logo.png" alt=""></a></li>
         
         </ul>
         <div class="navEND">

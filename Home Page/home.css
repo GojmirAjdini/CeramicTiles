@@ -228,10 +228,6 @@ body{
     align-items: center;
 }
 
-#dashboardHref{
-
-    margin-right: -150px;
-}
 
 .iconDIV #hideIcon{
 
@@ -273,6 +269,14 @@ body{
     }
 }
     
+@media(max-width:400px){
+
+    #dashboardHref{
+
+        right: 20px;
+        top: 0px;
+    }
+}
 .divImage{
     display: flex;
     align-items: center; 

@@ -25,7 +25,7 @@ $ambients = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div id="pageContainer">
         <div id="navBar">
             <ul class="listaStart">
-                <li><a href="../Home Page/home.html"> <img class="deltaLogo" src="../Home Page/Delta-logo.png" alt=""></a></li>
+                <li><a href="../Home Page/home.php"> <img class="deltaLogo" src="../Home Page/Delta-logo.png" alt=""></a></li>
             </ul>
             <div class="navEND">
                 <ul class="listaEND">
