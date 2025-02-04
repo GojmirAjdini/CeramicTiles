@@ -51,6 +51,7 @@ $totalUsers = $countResult['total_kontakte'];
             <th>Mbiemri</th>
             <th>Email</th>
             <th>Mesazhi</th>
+            <th>Edit</th>
         </tr>
         <?php
         $fundit = true; 
@@ -65,6 +66,10 @@ $totalUsers = $countResult['total_kontakte'];
                 <span>(NEW)</span>
                 <?php $fundit = false; ?>
                 <?php endif; ?>    
+            </td>
+            <td>
+
+            <a href="../Dashboard Page/fshijKontaktet.php?id=<?php echo $kontakt['id']; ?>"><span id="deleteKontaktID">Delete Kontakt</span></a>
             </td>
         </tr>
         <?php endforeach; ?>

@@ -11,7 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $mesazh = $_POST['mesazh'];
 
-    // Insert into database
     $query = "INSERT INTO kontakti (name, surname, email, message) VALUES (:name, :surname, :email, :message)";
     $stmt = $connection->prepare($query);
 
@@ -24,18 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "<script>alert('Mesazhi u dërgua me sukses!'); window.location.href='kontakt.php';</script>";
     } else {
         echo "<script>alert('Gabim! Provo përsëri.');</script>";
-    }
-
-    $query = "SELECT * FROM kontakti";
-    $stmt = $connection -> prepare($query);
-    $stmt -> execute();
-    $kontakti = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    foreach ($kontakti as $kontakt) {
-        echo "Name: " . $kontakt['name'] . "<br>";
-        echo "Surname: " . $kontakt['surname'] . "<br>";
-        echo "Email: " . $kontakt['email'] . "<br>";
-        echo "Message: " . $kontakt['message'] . "<br><br>";
     }
 
 }
@@ -98,7 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h2 id="HeadingID">Na kontakto</h2>
             </div>
 
-            <!-- Display message here -->
             <?php if (!empty($message)): 
                 ?>
                 <div id="message" class="message">

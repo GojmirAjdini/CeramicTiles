@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -78,9 +79,18 @@ span{
 
     color: rgb(206, 16, 16);
     font-weight: bold;
-    text-decoration: none;
 }
 
+#deleteKontaktID{
+
+    color: black;
+}
+
+#deleteKontaktID:hover{
+
+    color: red;
+    
+}
 #pageContainer #tableDIV{
 
     margin: 20px;
